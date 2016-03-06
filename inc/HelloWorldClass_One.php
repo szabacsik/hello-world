@@ -11,13 +11,15 @@ namespace App\MyHelloWorld_One;
 class HelloWorld
 {
     private $linebreak;
+    public $hello;
+    public $bye;
     function __construct ( $_linebreak )
     {
         $this -> linebreak = $_linebreak;
-        print "Hello World" . $this -> linebreak;
+        $this -> hello = "Hello World" . $this -> linebreak;
+        $this -> bye = "Goodbye World" . $this -> linebreak;
     }
     function __destruct () {
-        print "Goodbye World" . $this -> linebreak;
     }
 }
 
